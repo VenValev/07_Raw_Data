@@ -6,7 +6,12 @@ namespace _07_Raw_Data
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int n = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i < n; i ++)
+            {
+
+            }
         }
     }
 }
