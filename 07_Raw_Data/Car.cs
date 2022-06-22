@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _07_Raw_Data
 {
-    internal class Car
+    public class Car
     {
         private string model;
         private Engine dvigatel;
