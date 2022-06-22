@@ -9,6 +9,7 @@ namespace _07_Raw_Data
         {
             int n = int.Parse(Console.ReadLine());
             List<Car> carsList = new List<Car>();
+
             for(int i = 0; i < n; i ++)
             {
                 string text = Console.ReadLine();
@@ -35,6 +36,7 @@ namespace _07_Raw_Data
                 Tyres tyre3 = new Tyres(ty3, t3);
                 Tyres tyre4 = new Tyres(ty4, t4);
                 Car car = new Car(model, eng, bagaj, tyre1, tyre2, tyre3, tyre4);
+                carsList.Add(car);
             }
         }
     }
