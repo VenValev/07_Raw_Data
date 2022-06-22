@@ -38,6 +38,8 @@ namespace _07_Raw_Data
                 Car car = new Car(model, eng, bagaj, tyre1, tyre2, tyre3, tyre4);
                 carsList.Add(car);
             }
+
+
         }
     }
 }
