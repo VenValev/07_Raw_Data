@@ -43,13 +43,25 @@ namespace _07_Raw_Data
             List<Car> expectedCars = new List<Car>();
             foreach(Car car in carsList)
             {
-                if(car.Bagaj.Vid=="fragile")
+                if(car.Bagaj.Vid== "fragile")
                 {
                     if(car.Guma1.Preassure < 1 || car.Guma2.Preassure < 1 || car.Guma3.Preassure < 1 || car.Guma4.Preassure < 1)
                     {
                         expectedCars.Add(car);
                     }
                 }
+                else if (car.Bagaj.Vid == "flammable")
+                {
+                    if (car.Dvigatel.Power > 250)
+                    {
+                        expectedCars.Add(car);
+                    }
+                }
+            }
+
+            foreach(Car car in expectedCars)
+            {
+                Console.WriteLine($"{car.Model}");
             }
         }
     }
